@@ -1,0 +1,20 @@
+{
+  "name": "mvp-vscode-frontend-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.9.1",
+  "scripts": {
+    "dev": "rspack serve --host 0.0.0.0 --port 3000",
+    "build": "rspack build && cp public/index.html dist/index.html",
+    "lint": "eslint src tests",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@rspack/cli": "2.2.8",
+    "@rspack/core": "2.2.8",
+    "@rspack/dev-server": "2.2.1",
+    "eslint": "10.12.0"
+  }
+}
