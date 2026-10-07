@@ -1,0 +1,21 @@
+{
+  "name": "node-vscode-extension-proof",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node --watch --watch-path=src --inspect=0.0.0.0:9229 src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint src tests",
+    "format:check": "prettier --check . --ignore-unknown",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "eslint": "10.12.0",
+    "prettier": "3.9.9",
+    "vitest": "5.0.3"
+  }
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-extension-proof
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-extension-proof
+  template:
+    metadata:
+      labels:
+        app: node-extension-proof
+    spec:
+      containers:
+        - name: app
+          image: node-extension-proof:local
+          ports:
+            - containerPort: 3000

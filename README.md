@@ -18,6 +18,12 @@ Proves a Quarkus developer workflow inside the tested UDI: compile, build, code 
 
 See [03-quarkus-java-vscode-compatibility/README.md](03-quarkus-java-vscode-compatibility/README.md).
 
+### 04 - Node / VS Code extension compatibility
+
+Proves a Node developer workflow inside the tested UDI with locked dependency installation, linting, formatting, Vitest, Git context, YAML/Kubernetes editing, path completion, debugging support, and watch-mode reload.
+
+See [04-node-vscode-extension-compatibility/README.md](04-node-vscode-extension-compatibility/README.md).
+
 ## Lab boundary
 
 These are local reproducibility labs. Podman, local volumes, SSH, local Git repositories, and public dependency/extension sources may stand in for platform services.

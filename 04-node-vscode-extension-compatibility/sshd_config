@@ -1,0 +1,15 @@
+Port 2226
+Protocol 2
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+PermitRootLogin no
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile /etc/ssh/authorized_keys/%u
+AllowUsers developer
+UsePAM no
+X11Forwarding no
+AllowTcpForwarding yes
+GatewayPorts no
+Subsystem sftp internal-sftp
